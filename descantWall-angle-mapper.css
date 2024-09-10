@@ -1,0 +1,48 @@
+
+body {
+  background-color: #FFFFFF;
+}
+
+#ContainerDivMap {
+  width: 35%;
+  margin: auto;
+  position:sticky;
+  top: 5px;
+  left: 0px;
+  background-color: #FFFFFF;
+  padding: 1em;
+  border-radius: 1em;
+  display: inline-block; 
+  vertical-align:top;
+  text-align: center;
+  overflow: scroll;
+}
+
+#ContainerDivTable {
+  width: 60%;
+  margin: auto;
+  position:relative;
+  top: 5px;
+  right: 0px;
+  background-color: #FFFFFF;
+  padding: 1em;
+  border-radius: 1em;
+  display: inline-block; 
+  vertical-align:middle;
+  text-align: center;
+  overflow: scroll;
+}
+table.crystalMap {
+      font: 1em/1.5em Helvetica, sans-serif;
+      border: none;
+      margin: 1em 1em 1em 1em;
+    }
+    td {
+     border: none;
+    }
+    td.crystal  {
+     border: 2px solid #999;
+     padding: 3px;
+     vertical-align: middle; 
+     text-align: center;
+    }

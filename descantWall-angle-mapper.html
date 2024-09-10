@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>GRIFFIN Array angles</title>
+
+        <link rel="stylesheet" href="descantWall-angle-mapper.css">
+    </head>
+
+    <body>
+        <div id='header'><b>DESCANT Wall angles for neutron-neutron angular correlations</b></div>
+	  <br>
+<div>Go to: <a href="https://adamgarnsworthy.github.io/griffin-aries-angle-mapper/griffin-aries-angle-mapper.html">GRIFFIN and ARIES angles for beta-gamma angular correlations</a></div>
+
+	<div id=ContainerDivMap>
+	  <table id="MapTable" class="crystalMap" align="center"></table>
+
+	<table align="center">
+	    <label for="crystalSelector" class="right inline"><b>DESCANT detector:</b></label>
+	    <select id="crystalSelector" onchange="PlotTables()">
+	    </select>
+	  </td></tr>
+	<tr><td align="left">
+	    <label for="angleSelector" class="right inline"><b>Angular Bin:</b></label>
+	    <select id="angleSelector" onchange="PlotTables()">
+	    </select>
+	  </td></tr>
+	<tr><td align="left">
+	    <label for="tableSelector" class="right inline"><b>Table to Display:</b></label>
+	    <select id="tableSelector" onchange="PlotTables()">
+	      <option value="crystals">Detector Angles</option>
+	      <option value="combinations">Detector Combinations</option>
+	      <option value="angles">Angular Bins</option>
+	      <option value="angle-combinations">Detector Combinations for a specific angular bin</option>
+	    </select>
+	  </td></tr>
+	</table>
+
+	<p id="instructions" align="left">
+	<b>Guidance:</b><br>
+	<ul align="left">
+	<li>Select a Table to display using the drop-down
+	menus above.</li>
+	<li>Select a detector in the drop-down menu above that will be
+	referenced in the Detector Combinations table.</li>
+	<li>The tables on the right are scrollable.</li>
+	<li>Hover your mouse over a row of the Detector Angles or Detector
+	<li>Combinations table to see the detectors highlighted on the map.</li>
+        <li>Click on the map above to exclude detectors from the calculations.</li>
+	<li>Excluded detectors are not included in the number of pairs shown in
+	the Angular Bins.</li>
+	<li>Click them on the map again to include them once more.</li>
+        </ul>
+	</p>
+	</div>
+
+      <div id="ContainerDivTable">
+	<p id="TableTitle"></p>
+	<table id="MultiTable" align="center"></table>
+	</div>
+      </div>
+
+      <div id='footer'></div>
+
+      <script src="descantWall-angle-mapper.js" type="text/javascript"></script>
+
+    </body>
+</html>
