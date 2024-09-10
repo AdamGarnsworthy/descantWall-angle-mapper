@@ -762,7 +762,7 @@ function CalculateAngularBins(){
 	    // Search through the angular bins already identified to see if there is a match for the current one.
 	    for(k=0; k<AngularBinsAngle.length; k++){
         //console.log([parseFloat(AngularBinsAngle[k] - 2.5),thisAngle,parseFloat(AngularBinsAngle[k] + 2.5)]);
-		if((parseFloat(thisAngle) >= parseFloat(AngularBinsAngle[k] - 2.5)) && (parseFloat(thisAngle) <= parseFloat(AngularBinsAngle[k] + 2.5))){
+		if((parseFloat(thisAngle) >= parseFloat(AngularBinsAngle[k]) - 2.5) && (parseFloat(thisAngle) <= parseFloat(AngularBinsAngle[k]) + 2.5)){
 		    AngularBinsWeight[k]++;
 		    found=1;
 		    break;
